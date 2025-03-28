@@ -1,0 +1,18 @@
+/* write your css here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.homepage_bg {
+  background-image: url("../src/assets/Images/bghome.svg");
+}
+
+.box-with-shadow {
+  background-color: #ffd700; /* Yellow color */
+  box-shadow: 0 0 0 0 rgba(255, 215, 0, 1); /* Solid yellow shadow with blur and spread set to 0 */
+}
