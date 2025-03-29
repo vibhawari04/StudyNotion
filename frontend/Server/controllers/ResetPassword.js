@@ -1,6 +1,6 @@
 const User = require("../models/User");
 const mailSender = require("../utils/mailSender");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const crypto = require("crypto");
 // resetPassword token link
 exports.resetPasswordToken = async (req, res) => {
@@ -62,7 +62,7 @@ exports.resetPassword = async (req, res) => {
         message: "password  and confirm pass not matching",
       });
     }
-    
+
     // get userdetails  from db using token
     const userDetails = await User.findOne({ token: token });
     // if no entery - invalid token
