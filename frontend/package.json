@@ -44,6 +44,7 @@
     "eject": "react-scripts eject",
     "test": "react-scripts test",
     "server": "cd server && npm run dev",
+    "postinstall": "npm install",
     "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
   },
   "eslintConfig": {
