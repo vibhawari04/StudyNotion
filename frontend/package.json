@@ -39,12 +39,13 @@
     "url": "https://github.com/thepranaygupta/react-tailwind-css-starter-pack/issues"
   },
   "scripts": {
+     // "postinstall": "npm install",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "test": "react-scripts test",
     "server": "cd server && npm run dev",
-    "postinstall": "npm install",
+   
     "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
   },
   "eslintConfig": {
