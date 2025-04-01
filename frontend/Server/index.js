@@ -30,7 +30,8 @@ app.use(cookieParser());
 // );
 const allowedOrigins = [
   "http://localhost:3000", // For local testing
-  "https://studynotion-gvy4thr6b-vibhawaris-projects.vercel.app", // Your Vercel frontend URL
+  "https://studynotion-exmjma5d6-vibhawaris-projects.vercel.app",
+  // Your Vercel frontend URL
 ];
 
 app.use(
