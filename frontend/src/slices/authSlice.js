@@ -5,8 +5,8 @@ const initialState = {
   loading: false,
 
   // to remove items form localstorage.
-  token: localStorage.removeItem("token"),
-  token: null,
+  // token: localStorage.removeItem("token"),
+  // token: null,
   token: localStorage.getItem("token")
     ? JSON.parse(localStorage.getItem("token"))
     : null,
