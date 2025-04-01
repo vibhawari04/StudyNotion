@@ -13,7 +13,7 @@ const initialState = {
     : 0,
 };
 
-// creating slice
+// creating slice abcd
 const cartSlice = createSlice({
   name: "cart",
   initialState,
