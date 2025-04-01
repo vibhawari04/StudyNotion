@@ -153,7 +153,7 @@ export function login(email, password, navigate) {
       localStorage.setItem("user", JSON.stringify(response.data.user));
 
       // ✅ Set the token in axiosInstance for future requests
-      axiosInstance.defaults.headers.common[
+      apiConnector.axiosInstance.defaults.headers.common[
         "Authorization"
       ] = `Bearer ${token}`;
 
