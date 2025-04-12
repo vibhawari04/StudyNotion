@@ -88,7 +88,8 @@ const cors = require("cors");
 const { cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
 
-const PORT = process.env.PORT || 4000;
+// const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT;
 
 // CONNECTING TO DB
 database.connect();
@@ -99,7 +100,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   "http://localhost:3000", // Local Testing
-  "https://studynotion-black.vercel.app/", // Vercel Frontend
+  "https://studynotion-jtjmtr8ho-vibhawaris-projects.vercel.app/", // Vercel Frontend
 ];
 
 app.use(
