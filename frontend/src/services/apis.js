@@ -1,4 +1,5 @@
 const BASE_URL = process.env.REACT_APP_BASE_URL;
+console.log("base urllllll check ", BASE_URL);
 
 // {`${BASE_URL}/auth/sendotp`},
 // AUTH ENDPOINTS
