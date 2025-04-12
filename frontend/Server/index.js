@@ -22,24 +22,24 @@
 // // middleware
 // app.use(express.json());
 // app.use(cookieParser());
-// // app.use(
-// //   cors({
-// //     origin: "http://localhost:3000",
-// //     credentials: true,
-// //   })
-// // );
-// const allowedOrigins = [
-//   "http://localhost:3000", // For local testing
-//   "https://studynotion-exmjma5d6-vibhawaris-projects.vercel.app",
-//   // Your Vercel frontend URL
-// ];
-
 // app.use(
 //   cors({
-//     origin: allowedOrigins,
+//     origin: "http://localhost:3000",
 //     credentials: true,
 //   })
 // );
+// // const allowedOrigins = [
+// //   "http://localhost:3000", // For local testing
+// //   "https://studynotion-exmjma5d6-vibhawaris-projects.vercel.app",
+// //   // Your Vercel frontend URL
+// // ];
+
+// // app.use(
+// //   cors({
+// //     origin: allowedOrigins,
+// //     credentials: true,
+// //   })
+// // );
 // app.use(
 //   fileUpload({
 //     useTempFiles: true,
@@ -99,7 +99,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   "http://localhost:3000", // Local Testing
-  "https://studynotion-exmjma5d6-vibhawaris-projects.vercel.app", // Vercel Frontend
+  "https://studynotion-black.vercel.app/", // Vercel Frontend
 ];
 
 app.use(
