@@ -121,7 +121,10 @@ const allowedOrigins = [
 // Handle Preflight (OPTIONS) Requests
 //google code
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://your-frontend.com");
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://studynotion-jtjmtr8ho-vibhawaris-projects.vercel.app"
+  );
   res.setHeader(
     "Access-Control-Allow-Methods",
     "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS,CONNECT,TRACE"
